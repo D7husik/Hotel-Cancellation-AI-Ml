@@ -11,7 +11,8 @@ This project predicts whether a hotel booking will be canceled using multiple ma
 
 It includes data cleaning, feature engineering, encoding, model training, and evaluation, all organized in a modular structure for clarity and reusability.
 
-Project Structure
+## 📁 Project Structure
+
 hotel_cancellations/
 │
 ├── data/                             # dataset folder (auto-downloaded if missing)
@@ -23,6 +24,7 @@ hotel_cancellations/
 ├── main.py                           # main script that runs the entire pipeline
 ├── requirements.txt                  # dependencies
 └── README.md
+
 
 ⚙️ How It Works
 
