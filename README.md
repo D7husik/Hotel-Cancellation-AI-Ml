@@ -1,87 +1,118 @@
-# Hotel-Cancellation-AI-Ml
+# 🏨 Hotel Booking Cancellations – Machine Learning Project
 
-🏨 Hotel Booking Cancellations – Machine Learning Project
+**Hotel Booking Cancellations** is a machine learning project that predicts whether a hotel booking will be canceled.  
+It uses multiple ML models — **Random Forest**, **Decision Tree**, **CatBoost**, **XGBoost**, and **LightGBM** — trained on the *Hotel Booking Cancellations* dataset.  
 
-This project predicts whether a hotel booking will be canceled using multiple machine learning models :
-  -Random Forest 
-  -Decision Tree
-  -CatBoost 
-  -XGBoost 
-  -LightGBM.
+The pipeline includes **data cleaning**, **feature engineering**, **encoding**, **model training**, and **evaluation**, all built in a modular structure for reusability and clarity.
 
-It includes data cleaning, feature engineering, encoding, model training, and evaluation, all organized in a modular structure for clarity and reusability.
+---
 
-## 📁 Project Structure
+## 📚 Table of Contents
+- [Features](#features)
+- [Project Structure](#project-structure)
+- [How It Works](#how-it-works)
+- [Colab Example](#colab-example)
+- [Quick Start](#quick-start)
+- [Requirements](#requirements)
+- [Contributors](#contributors)
 
-hotel_cancellations/
-│
-├── data/                             # dataset folder (auto-downloaded if missing)
-├── src/
-│   ├── __init__.py
-│   ├── preprocessing.py              # data loading, cleaning, feature engineering
-│   ├── modeling.py                   # ML models and training functions
-│
-├── main.py                           # main script that runs the entire pipeline
-├── requirements.txt                  # dependencies
-└── README.md
+---
 
-
-⚙️ How It Works
-
-When you run main.py, the script will:
-
-1.Check for the dataset
-  If not found, it automatically downloads
-  hotel_booking_cancellations.csv from Google Drive using gdown.
-2.Preprocess the data
-  Cleans missing values
-  Creates new engineered features
-  Encodes categorical variables
-3.Split the data into train/test sets.
-4.Train and evaluate models:
-  Random Forest
-  Decision Tree
-  CatBoost
-  XGBoost
-  LightGBM
-
-5.Outputs model performance (accuracy, ROC-AUC, classification report, etc.)
+## ✨ Features
+- Predicts hotel booking cancellations using multiple ML algorithms.
+- Automatically downloads dataset if missing.
+- Cleans and preprocesses raw data.
+- Encodes categorical features and engineers new ones.
+- Compares performance of five machine learning models.
+- Modular source code design (`src/` folder) for easy expansion.
 
 
-🧠 Colab Example
+---
 
-To see the project logic and visualizations interactively, check out the Colab version:
-👉 (https://colab.research.google.com/drive/1TO9BE5z489NnlbXxF-e_5vzpgx2lQzcg?usp=sharing)
+## ⚙️ How It Works
+
+When you run `main.py`, the script:
+
+1. **Checks for the dataset**
+   - If `hotel_booking_cancellations.csv` isn’t found, it automatically downloads it from Google Drive using `gdown`.
+
+2. **Preprocesses the data**
+   - Cleans missing values  
+   - Engineers new features  
+   - Encodes categorical variables  
+
+3. **Splits the data**
+   - Divides it into training and testing sets.
+
+4. **Trains and evaluates models**
+   - Random Forest  
+   - Decision Tree  
+   - CatBoost  
+   - XGBoost  
+   - LightGBM  
+
+5. **Outputs performance metrics**
+   - Accuracy  
+   - ROC-AUC  
+   - Classification Report  
+
+---
+
+## 🧠 Colab Example
+See the project working interactively in Google Colab:  
+👉 [Colab Example](https://colab.research.google.com/drive/1TO9BE5z489NnlbXxF-e_5vzpgx2lQzcg?usp=sharing)
+
+---
+
+## 🚀 Quick Start
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/yourusername/hotel-cancellations.git
+cd hotel-cancellations
+
+```
 
 
-🚀 Quick Start
-1️⃣ Clone the repo
-    git clone https://github.com/yourusername/hotel-cancellations.git
-    cd hotel-cancellations
 
 2️⃣ Install dependencies
+```bash
 pip install -r requirements.txt
+```
 
 3️⃣ Run the project
+```bash
 python main.py
+```
+If the dataset isn’t found, it will be downloaded automatically.
 
 
-If the dataset isn’t found, it will automatically download from Google Drive.
-
-
-🧰 Requirements
-
+## 🧰 Requirements
 Python 3.8+
 
 Libraries:
 
 pandas
+
 numpy
+
 matplotlib
+
 seaborn
+
 scikit-learn
+
 catboost
+
 xgboost
+
 lightgbm
+
 gdown
 
+
+
+## 👥 Contributors
+
+Developed by Dzhusik & teammate From bootcamp
+Feel free to contribute, improve, or fork the project!
